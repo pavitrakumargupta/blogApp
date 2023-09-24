@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap");
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+.authenticationPage{
+	width: 100vw;
+	min-height: 100vh;
+	/* flex-grow: 1; */
+	background-color: #000b1a;
+  	/* background-image: linear-gradient(315deg, #e2f6ff 20%, #fcfcf0 70%); */
+	display: flex;
+ 
+	font-family: 'Montserrat', sans-serif;
+	align-items: center;
+	background-image: url("https://static.vecteezy.com/system/resources/previews/002/196/227/original/abstract-technology-futuristic-digital-concept-square-pattern-with-lighting-glowing-particles-square-elements-on-dark-blue-background-free-vector.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* background-size: 1800px; */
+	/* filter: blur(1px); */
+	
+}
+.authenticationPage>.container{
+	background-color: transparent;
+	width: 100%;
+	height: 100vh;	
+	border-radius: 10px;
+	display: flex;
+	padding: 0px;
+	justify-content: center;
+	align-items: center;
+	backdrop-filter: blur(1px);
+	background-color: rgba(0, 6, 38, 0.8);
+}
+
+.authenticationPage>.container >div{
+	width: 40%;
+	height: 100%;
+}
+
+.authenticationPage>.container >.authenticationScreen{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	overflow-y: auto;
+	min-width: max-content;
+	background-color:rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	border: 0.5px solid rgba(112, 112, 112, 0.18);
+	box-shadow: 13px 13px 0px rgba(0, 0, 0, 0.5);
+	
+	color: white;
+	height: max-content;
+}
+
+.authenticationPage>.container >.authenticationScreen>h1{
+	/* margin: 50px 70px 0; */
+}
+
+.authenticationPage>.container >.authenticationScreen>.form{
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	margin: 0 auto;
+	gap: 15px;
+	min-width: max-content;
+}
+.authenticationPage>.container >.authenticationScreen>.form>.form-Input{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+.authenticationPage>.container >.authenticationScreen>.form>.form-Input >i{
+	font-size: 18px;
+}
+.authenticationPage>.container >.authenticationScreen>.form input{
+	font-size: 18px;
+	background-color:transparent;
+	border: none;
+	border-bottom: 1px solid rgb(255, 255, 255);
+	padding: 5px 0;
+	margin: 8px 0;
+	outline: none;
+	color: rgb(255, 255, 255);
+	border-radius: 0;
+	width: 100%;
+	
+}
+.authenticationPage>.container >.authenticationScreen>.form input::placeholder{
+	color: white;
+}
+.authenticationPage>.container >.authenticationScreen>.form>.submitBtn{
+	background:transparent;
+	color: #ffffff;
+	/* text-shadow: 0 0 3px #a9a1ff, 0 0 5px #000000; */
+	font-size: 18px;
+	border: 1px solid rgb(112, 120, 214);
+	border-radius: 10px;
+	width: fit-content;
+	margin: 10px auto;
+	font-weight: bold;
+	padding: 12px 75px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+	cursor: pointer;
+}
+.authenticationPage>.container >.authenticationScreen>.form>.submitBtn:hover{
+	background-color:  rgb(44, 60, 231);
+}
+.authenticationPage>.container >.welcomeScreen{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	gap: 20px;
+	background-color:rgb(70, 70, 77);
+	border-radius: 0 10px 10px 0;
+	border-left: 1px solid rgb(112, 112, 112,.2);
+	display: none;
+}
+
+.authenticationPage>.container >.welcomeScreen>h1{
+	text-align: center;
+	color: rgb(255, 255, 255);
+	text-shadow: 0 0 3px #a9a1ff, 0 0 5px #000000;
+	font-size: 40px;
+	width: 90%;
+	margin: 0 auto;
+}
+.authenticationPage>.container >.welcomeScreen>img{
+	width: 500px;
+	/* margin-left: -50px; */
+}
+.authenticationPage a{
+	color: #149dff;
+}
+@media (max-width: 800px) {
+	.authenticationPage>.container >.authenticationScreen{
+		width: 60%;
+		margin: 5px;
+	}
+}
+@media (max-width: 450px) {
+	.authenticationPage>.container >.authenticationScreen{
+		width: 90%;
+		margin: 5px;
+	}
+}
